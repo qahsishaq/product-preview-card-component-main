@@ -20,7 +20,7 @@ body {
 }
 main {
   width: 40%;
-  min-height: fit-content;
+  min-height: 39rem;
   background: hsl(0, 0%, 100%);
   display: flex;
   border-radius: 0.6rem;
