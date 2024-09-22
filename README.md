@@ -42,10 +42,6 @@ Users should be able to:
 
 ### What I used
 
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
 Media query:
 
