@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+main {
+  width: 40%;
+  min-height: fit-content;
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  border-radius: 0.6rem;
+}
+.product-background {
+  width: 50%;
+  background: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+  border-radius: 0.6rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.product-background:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/image-product-desktop.jpg");
+  background-size: cover;
+}
+.text-and-content {
+  width: 50%;
+  padding: 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.text-and-content h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  margin-top: 1rem;
+}
+.text-and-content h3 {
+  font-family: "Fraunces", serif;
+  font-size: 2.6rem;
+  width: 70%;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.text-and-content p {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  width: 70%;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.cost {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.cost .price {
+  color: hsl(158, 36%, 37%);
+}
+.cost h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+button {
+  width: 90%;
+  background: hsl(158, 36%, 37%);
+  border: none;
+  font-family: "Monteserrat", sans-serif;
+  padding: 1.2rem 0rem;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: 600;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: hsl(158, 31%, 25%);
+}
+
+/* Media query for mobile phones */
+@media only screen and (min-width: 280px) and (max-width: 800px) {
+  body {
+    width: 100vw;
+  }
+  main {
+    width: 95vw;
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+  }
+  .product-background {
+    width: 100%;
+    height: 50vh;
+    background: url(./images/image-product-mobile.jpg);
+    background-size: cover;
+    border-radius: 1.2rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .product-background:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./images/image-product-mobile.jpg");
+    background-size: cover;
+  }
+  .text-and-content {
+    width: 90%;
+    margin: auto;
+    padding: 2.5rem 0rem;
+    gap: 3rem;
+  }
+  .text-and-content h2 {
+    margin-top: 0rem;
+    font-size: 1.6rem;
+    color: hsl(228, 12%, 48%);
+  }
+  .text-and-content h3 {
+    font-size: 4.2rem;
+    width: 100%;
+    line-height: 4rem;
+  }
+  .text-and-content p {
+    width: 85%;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .cost .price {
+    width: fit-content;
+  }
+  .cost h4 {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  button {
+    width: 100%;
+    padding: 2.4rem 0rem;
+  }
+  button:active {
+    background-color: hsl(158, 31%, 25%);
+  }
+}
+/* Media query for tablets */
+@media only screen and (min-width: 801px) and (max-width: 1250px) {
+  .cost .price {
+    width: fit-content;
+  }
+  .cost h4 {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  button:active {
+    background-color: hsl(158, 31%, 25%);
+  }
+}
